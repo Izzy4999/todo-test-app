@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
 
-type Props = {};
+type Props = {username:string};
 
-const HeaderLeft = (props: Props) => {
+const HeaderLeft = ({username}: Props) => {
   return (
     <div className="bg-[#3556AB] text-white h-32 flex items-start py-4 px-5 gap-4 font-roboto">
       <div>
@@ -16,7 +16,7 @@ const HeaderLeft = (props: Props) => {
         />
       </div>
       <div>
-        <h1 className="text-[16px] font-[500]">Hello John</h1>
+        <h1 className="text-[16px] font-[500]">Hello {username}</h1>
         <p className="italic text-[25px] font-[100]">
           What are your plans for today?
         </p>

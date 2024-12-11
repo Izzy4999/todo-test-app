@@ -17,7 +17,7 @@ const Task = ({ checked, onChange, title, onEdit }: Props) => {
   return (
     <div className="bg-white flex items-center justify-between py-8 px-5 my-3 mx-4 shadow-lg rounded">
       <div
-        className="relative inline-flex items-center flex-1 gap-4"
+        className="relative inline-flex items-center flex-1 gap-4 cursor-pointer"
         onClick={handleChange}
       >
         <input
